@@ -221,7 +221,7 @@ namespace Ui {
     void divider() { std::cout << purple << "================================================" << reset << "\n"; }
     void login(const HashTable& users, const std::string& username, const std::string& password) {
         divider();
-        std::cout << lightBlue << "                 VEREP AUTH" << reset << "\n";
+        std::cout << lightBlue << "                AUTH" << reset << "\n";
         std::cout << "  Username: " << username << "\n";
         const UserRecord* user = users.find(username);
         if (!user) std::cout << gold << "  Result: Account not found" << reset << "\n";
